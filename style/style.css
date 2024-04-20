@@ -6,6 +6,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -16,6 +17,7 @@ body {
   background: url("../images/Mainbg.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -49,7 +51,7 @@ header {
     }
   }
 
-  & .menu{
+  & .menu {
     display: none;
   }
 
@@ -85,6 +87,7 @@ header {
         translate: 0%;
         opacity: 1;
       }
+
       &:hover {
         background: linear-gradient(45deg, #f06, #3cf);
         -webkit-text-fill-color: transparent;
@@ -126,6 +129,7 @@ main {
           width: 50px;
         }
       }
+
       & .profile-details {
         color: #fff;
         display: flex;
@@ -139,6 +143,7 @@ main {
             font-size: 3rem;
           }
         }
+
         & p {
           font-size: 2rem;
         }
@@ -185,6 +190,7 @@ main {
               filter: blur(5px);
               -webkit-filter: blur(5px);
             }
+
             &::after {
               content: "";
               position: absolute;
@@ -205,6 +211,7 @@ main {
               -ms-transition: 0.3s ease-in;
               -o-transition: 0.3s ease-in;
             }
+
             &:hover::after {
               background-position: 100% 0;
             }
@@ -253,6 +260,7 @@ main {
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
         }
+
         & .profile-img {
           position: relative;
           width: 38rem;
@@ -262,6 +270,7 @@ main {
           overflow: hidden;
           animation: zoomIn 1s linear infinite;
           -webkit-animation: zoomIn 1s linear infinite alternate;
+
           & img {
             width: 38rem;
             height: 38rem;
@@ -291,6 +300,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     color: #fff;
+
     .about-img {
       width: 40rem;
       height: fit-content;
@@ -308,6 +318,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+
         & span {
           position: absolute;
           width: 100%;
@@ -334,6 +345,7 @@ main {
           -ms-border-radius: 20%;
           -o-border-radius: 20%;
         }
+
         & .profile-img {
           position: relative;
           width: 40rem;
@@ -341,6 +353,7 @@ main {
           border-radius: 20%;
           z-index: 1;
           overflow: hidden;
+
           & img {
             width: 40rem;
             height: 50rem;
@@ -363,6 +376,7 @@ main {
         }
       }
     }
+
     & .about-txt {
       display: flex;
       flex-direction: column;
@@ -371,11 +385,13 @@ main {
       & h2 {
         font-size: 5.2rem;
       }
+
       & p {
         font-size: 1.6rem;
         line-height: 1.4;
         max-width: 100%;
       }
+
       & .btn {
         position: relative;
         display: inline-flex;
@@ -413,6 +429,7 @@ main {
           filter: blur(5px);
           -webkit-filter: blur(5px);
         }
+
         &::after {
           content: "";
           position: absolute;
@@ -433,10 +450,12 @@ main {
           -ms-transition: 0.3s ease-in;
           -o-transition: 0.3s ease-in;
         }
+
         &:hover::after {
           background-position: 100% 0;
         }
       }
+
       & .details-container {
         display: flex;
         justify-content: space-between;
@@ -446,6 +465,7 @@ main {
           line-height: 1.5;
           font-size: 1.5rem;
         }
+
         & .details-2 p {
           line-height: 1.5;
           font-size: 1.5rem;
@@ -461,9 +481,11 @@ main {
 
     .skills-content {
       text-align: center;
+
       & h2 {
         font-size: 5.5rem;
       }
+
       & .icons-container {
         display: flex;
         justify-content: center;
@@ -503,6 +525,3 @@ main {
 }
 
 /***** End scrollbar Section *****/
-
-
-

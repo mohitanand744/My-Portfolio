@@ -57,4 +57,29 @@
     html {
         font-size: 38.5%;
     }
+
+    main .profile-container .text-container .profile-details p {
+        font-size: 2.2rem;
+    }
+
+    main .profile-container .text-container .social-media-icons img {
+        width: 40px;
+    }
+
+    main .about-container .about-txt .details-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .about-container .about-txt .details-container .details-1 p {
+        font-size: 2.3rem;
+    }
+
+    main .about-container .about-txt .details-container .details-2 p {
+        font-size: 2.3rem;
+    }
+
+    main .about-container .about-txt p {
+        font-size: 2rem;
+    }
 }
