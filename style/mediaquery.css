@@ -82,4 +82,8 @@
     main .about-container .about-txt p {
         font-size: 2rem;
     }
+
+    main  .profile-container  .text-container  .profile-details  h1 {
+        font-size: 4.5rem;
+    }
 }
