@@ -23,7 +23,7 @@
 @media screen and (width < 938px) {
 
     html {
-        font-size: 52.5%;
+        font-size: 56.5%;
     }
 
     header {
@@ -36,6 +36,13 @@
             display: none;
         }
     }
+
+    main .Education .card-container .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
 }
 
 @media screen and (width < 800px) {
@@ -45,17 +52,109 @@
             margin: 0 auto;
         }
     }
+
+    main .Experience-timeLine {
+        max-width: 85%;
+
+        &::after {
+            left: 4px;
+        }
+
+        & .timeline-container {
+            width: 100%;
+
+            & .timeline-txt-box {
+
+                & .left-arrow,
+                .right-container {
+                    border-right: 15px solid #91919179;
+                    border-left: 0;
+                    left: -15px;
+                }
+            }
+        }
+
+        & .right-container {
+            left: 0;
+        }
+
+        & .left-container img,
+        .right-container img {
+            left: -20px;
+        }
+    }
 }
 
 @media screen and (width < 648px) {
     html {
-        font-size: 45.5%;
+        font-size: 50.5%;
+    }
+
+    main .Experience-timeLine {
+        max-width: 95%;
+
+        &::after {
+            left: 4px;
+        }
+
+        & .timeline-container {
+            width: 100%;
+
+            & .timeline-txt-box {
+
+                & .left-arrow,
+                .right-container {
+                    border-right: 15px solid #91919179;
+                    border-left: 0;
+                    left: -15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width < 500px) {
+    main .Experience-timeLine {
+        max-width: 100%;
+
+        &::after {
+            left: 4px;
+        }
+
+        & .timeline-container {
+            width: 100%;
+
+            & .timeline-txt-box {
+
+                & .left-arrow,
+                .right-container {
+                    border-right: 15px solid #91919179;
+                    border-left: 0;
+                    left: -15px;
+                }
+
+                & h2 {
+                    font-weight: 600;
+                    font-size: 3.5rem;
+                }
+
+                & small {
+                    display: inline-block;
+                    margin-bottom: 1.5rem;
+                    font-size: 2rem;
+                }
+
+                & p {
+                    font-size: 2.2rem;
+                }
+            }
+        }
     }
 }
 
 @media screen and (width < 438px) {
     html {
-        font-size: 38.5%;
+        font-size: 40.5%;
     }
 
     main .profile-container .text-container .profile-details p {
@@ -83,7 +182,30 @@
         font-size: 2rem;
     }
 
-    main  .profile-container  .text-container  .profile-details  h1 {
-        font-size: 4.5rem;
+    main .profile-container .text-container .profile-details h1 {
+        font-size: 4.9rem;
+    }
+
+    main .Experience-timeLine {
+        & .timeline-container {
+
+            & .timeline-txt-box {
+
+                & h2 {
+                    font-weight: 600;
+                    font-size: 4rem;
+                }
+
+                & small {
+                    display: inline-block;
+                    margin-bottom: 1.5rem;
+                    font-size: 2.3rem;
+                }
+
+                & p {
+                    font-size: 2.5rem;
+                }
+            }
+        }
     }
 }
