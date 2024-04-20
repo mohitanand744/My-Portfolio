@@ -1,0 +1,60 @@
+@media screen and (width < 1200px) {
+
+    html {
+        font-size: 58.5%;
+    }
+
+    .profile-container {
+        padding-top: 13rem;
+        flex-direction: column;
+        gap: 5rem;
+
+        & .profile-image-container {
+            width: 32rem;
+            height: 32rem;
+        }
+    }
+
+    .text-container {
+        order: 2;
+    }
+}
+
+@media screen and (width < 938px) {
+
+    html {
+        font-size: 52.5%;
+    }
+
+    header {
+        & .menu {
+            display: block;
+            cursor: pointer;
+        }
+
+        & .nav-links {
+            display: none;
+        }
+    }
+}
+
+@media screen and (width < 800px) {
+    main {
+        & .about-container {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (width < 648px) {
+    html {
+        font-size: 45.5%;
+    }
+}
+
+@media screen and (width < 438px) {
+    html {
+        font-size: 38.5%;
+    }
+}
