@@ -21,9 +21,11 @@
     html {
         font-size: 58.5%;
     }
+
     .dropdown-menu {
         display: none;
     }
+
     header {
         & .menu {
             display: block;
@@ -314,6 +316,10 @@
             width: 60%;
             font-size: 3rem;
         }
+    }
+
+    header .logo-container .logo {
+        width: 15rem;
     }
 }
 
