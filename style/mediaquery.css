@@ -21,7 +21,9 @@
     html {
         font-size: 58.5%;
     }
-
+    .dropdown-menu {
+        display: none;
+    }
     header {
         & .menu {
             display: block;
@@ -113,6 +115,29 @@
                     left: -15px;
                 }
             }
+        }
+    }
+
+    .dropdown-menu {
+        right: 10px;
+        width: 95%;
+
+        & li {
+
+            padding: 1.1rem 1rem;
+        }
+
+        & li .s {
+            font-size: 3rem;
+        }
+
+        & li a {
+            font-size: 3rem;
+        }
+
+        & .btn {
+            width: 60%;
+            font-size: 3rem;
         }
     }
 }
@@ -271,11 +296,33 @@
     main .Experience-timeLine .Ex-top p {
         font-size: 2.5rem;
     }
+
+    .dropdown-menu {
+        right: 10px;
+        width: 95%;
+        gap: 1rem;
+
+        & li .s {
+            font-size: 4rem;
+        }
+
+        & li a {
+            font-size: 3.5rem;
+        }
+
+        & .btn {
+            width: 60%;
+            font-size: 3rem;
+        }
+    }
 }
 
-@media screen and (width < 340px) {
+@media screen and (width < 360px) {
     main .Education .card-container .card .card-img img {
         width: 40rem;
     }
 
+    main .profile-container .text-container .profile-details h1 {
+        font-size: 4.6rem;
+    }
 }
