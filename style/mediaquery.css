@@ -1,9 +1,5 @@
 @media screen and (width < 1200px) {
 
-    html {
-        font-size: 58.5%;
-    }
-
     .profile-container {
         padding-top: 13rem;
         flex-direction: column;
@@ -23,7 +19,7 @@
 @media screen and (width < 938px) {
 
     html {
-        font-size: 56.5%;
+        font-size: 58.5%;
     }
 
     header {
@@ -95,7 +91,7 @@
 
 @media screen and (width < 648px) {
     html {
-        font-size: 50.5%;
+        font-size: 53.5%;
     }
 
     main .Experience-timeLine {
@@ -122,6 +118,7 @@
 }
 
 @media screen and (width < 500px) {
+
     main .Experience-timeLine {
         max-width: 100%;
 
@@ -170,11 +167,11 @@
 
 @media screen and (width < 438px) {
     html {
-        font-size: 37.5%;
+        font-size: 38.5%;
     }
 
     main .profile-container .text-container .profile-details p {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
     }
 
     main .profile-container .text-container .social-media-icons img {
@@ -195,17 +192,18 @@
     }
 
     main .about-container .about-txt p {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     main .profile-container .text-container .profile-details h1 {
-        font-size: 4.9rem;
+        font-size: 5.5rem;
     }
 
     main .Experience-timeLine {
         & .timeline-container {
 
             & .timeline-txt-box {
+                margin-left: 8rem;
 
                 & h2 {
                     font-weight: 600;
@@ -228,8 +226,56 @@
     main .Experience-timeLine {
 
         &::after {
-            left: 0px;
-            top: 30%;
+            left: 12px;
+            top: 33%;
         }
     }
+
+    main .Experience-timeLine .right-container img {
+        left: -4px;
+    }
+
+    main .profile-container .text-container .profile-details h1 .work {
+        font-size: 4rem;
+    }
+
+
+    main .profile-container .profile-image-container {
+        width: 46rem;
+        height: 46rem;
+    }
+
+    main .profile-container .profile-image-container .glowing-circle .profile-img img {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    main .profile-container .profile-image-container .glowing-circle .profile-img {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    main .Education p {
+        font-size: 2.5rem;
+    }
+
+    main .Education .card-container .card .card-txt h4 {
+
+        font-size: 2.4rem;
+    }
+
+    main .Education .card-container .card .card-txt {
+        text-align: center;
+    }
+
+    main .Experience-timeLine .Ex-top p {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (width < 340px) {
+    main .Education .card-container .card .card-img img {
+        width: 40rem;
+    }
+
 }

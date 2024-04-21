@@ -99,10 +99,18 @@ header {
   }
 }
 
+.read-more-txt {
+  display: none;
+}
+
+.read-more-btn {
+  color: red;
+  cursor: pointer;
+}
+
 main {
   min-height: calc(100vh - 6rem);
   width: 100%;
-  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -624,7 +632,11 @@ main {
 
         & p {
           font-size: 1.8rem;
+
+
         }
+
+
 
         & .right-arrow {
           height: 0;
@@ -634,7 +646,7 @@ main {
           z-index: 1;
           border-top: 15px solid transparent;
           border-bottom: 15px solid transparent;
-          border-right: 15px solid #9999996e;
+          border-right: 15px solid #d6d6d6a8;
           left: -15px;
         }
       }
@@ -661,7 +673,7 @@ main {
       position: absolute;
       width: 6px;
       height: 60%;
-      background: #bdbdbd;
+      background: linear-gradient(#eb1d6f, #10baf3);
       top: 45%;
       left: 3%;
       margin-left: -3px;
