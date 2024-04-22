@@ -124,6 +124,10 @@
         }
     }
 
+    main .Latest-work .cards-container {
+        max-width: 92%;
+    }
+
     .dropdown-menu {
         right: 10px;
         width: 95%;

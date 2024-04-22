@@ -45,6 +45,13 @@ let activeClass = (e) => {
   e.target.classList.add("active");
 };
 
+// ! loader function
+
+let loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
 //!  Iteration
 
 readMoreBtn.forEach((currElem) => {
