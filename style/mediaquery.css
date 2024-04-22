@@ -340,6 +340,10 @@
         }
     }
 
+    main .Latest-work .cards-container .card {
+        padding: 1.5rem;
+    }
+
     header .logo-container .logo {
         width: 15rem;
     }
