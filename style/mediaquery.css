@@ -1,4 +1,7 @@
 @media screen and (width < 1200px) {
+    html {
+        font-size: 58.5%;
+    }
 
     .profile-container {
         padding-top: 13rem;
@@ -19,7 +22,7 @@
 @media screen and (width < 938px) {
 
     html {
-        font-size: 58.5%;
+        font-size: 56.5%;
     }
 
     .dropdown-menu {
@@ -54,6 +57,10 @@
 }
 
 @media screen and (width < 800px) {
+    html {
+        font-size: 53.5%;
+    }
+
     main {
         & .about-container {
             grid-template-columns: repeat(1, 1fr);
@@ -94,9 +101,6 @@
 }
 
 @media screen and (width < 648px) {
-    html {
-        font-size: 53.5%;
-    }
 
     main .Experience-timeLine {
         max-width: 95%;
@@ -145,6 +149,9 @@
 }
 
 @media screen and (width < 500px) {
+    html {
+        font-size: 45.5%;
+    }
 
     main .Experience-timeLine {
         max-width: 100%;
