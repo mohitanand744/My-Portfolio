@@ -199,14 +199,6 @@
             }
         }
     }
-
-    main .Experience-timeLine {
-
-        &::after {
-            left: 4px;
-            top: 30%;
-        }
-    }
 }
 
 @media screen and (width < 438px) {
@@ -364,6 +356,14 @@
 
     main .Latest-work .latest-top p {
         font-size: 2.6rem;
+    }
+
+    main .Experience-timeLine {
+
+        &::after {
+            left: 16px;
+            top: 37%;
+        }
     }
 }
 
