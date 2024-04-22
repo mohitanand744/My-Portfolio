@@ -15,9 +15,11 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 0 2rem;
-  background-image:  url("../images/Mainbg.jpg");
-  background-size: cover;
+  background: url("../images/aboutbg.jpg");
   background-repeat: no-repeat;
+  backdrop-filter: blur(9px);
+  background-size: cover;
+  background-position: top;
   position: relative;
 }
 
@@ -643,11 +645,11 @@ main {
         margin-top: 4rem;
         padding: 2rem;
         background: #00000070;
-        border-radius: 2rem;
-        -webkit-border-radius: 2rem;
-        -moz-border-radius: 2rem;
-        -ms-border-radius: 2rem;
-        -o-border-radius: 2rem;
+        border-radius: 3.5rem;
+        -webkit-border-radius: 3.5rem;
+        -moz-border-radius: 3.5rem;
+        -ms-border-radius: 3.5rem;
+        -o-border-radius: 3.5rem;
 
         & .card-img {
 
