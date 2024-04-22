@@ -316,6 +316,11 @@
         font-size: 2.5rem;
     }
 
+    main .profile-container .text-container .profile-details .btn-container .btn {
+        font-size: 2.5rem;
+        height: 5.3rem;
+    }
+
     .dropdown-menu {
         right: 10px;
         width: 95%;
@@ -337,6 +342,24 @@
 
     header .logo-container .logo {
         width: 15rem;
+    }
+
+    main .Latest-work .cards-container .card .img-container img {
+        padding: 0.4rem;
+    }
+
+    main .Latest-work .cards-container .card h1 {
+        font-size: 4rem;
+    }
+
+    main .Latest-work .cards-container .card .card-btn-container .btn {
+        font-size: 2.5rem;
+        width: 15rem;
+        height: 5rem;
+    }
+
+    main .Latest-work .latest-top p {
+        font-size: 2.6rem;
     }
 }
 
