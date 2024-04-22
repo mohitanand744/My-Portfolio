@@ -2,6 +2,7 @@ let readMoreBtn = document.querySelectorAll(".read-more-btn");
 let dropDownBtn = document.querySelector(".menu");
 let navLinks = document.querySelectorAll(".nav-links a");
 let menuLinks = document.querySelectorAll("li");
+let loadMoreProject = document.getElementById("loadBtn");
 let dropDownValue = false;
 let rMoreBtn = false;
 
@@ -71,3 +72,7 @@ menuLinks.forEach((menuLink) => {
 // ! click Event
 
 dropDownBtn.addEventListener("click", dropDown);
+
+loadMoreProject.addEventListener("click", () => {
+  alert("Work In Progress...");
+});

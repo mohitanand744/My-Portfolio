@@ -880,7 +880,7 @@ main {
         display: flex;
         flex-direction: column;
         width: fit-content;
-        max-width: 40rem;
+        max-width: 100%;
         margin-bottom: 4rem;
         padding: 3rem;
         align-items: center;
