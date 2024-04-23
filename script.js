@@ -4,6 +4,8 @@ let navLinks = document.querySelectorAll(".nav-links a");
 let menuLinks = document.querySelectorAll("li");
 let loadMoreProject = document.getElementById("loadBtn");
 let cursor = document.querySelector(".cursor");
+let filterBtns = document.querySelectorAll(".filterbtn");
+let filterCards = document.querySelectorAll(".filtercard");
 let dropDownValue = false;
 let rMoreBtn = false;
 
@@ -53,6 +55,25 @@ let loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
+//! filter Card Function
+
+let filtercardss = (e) => {
+  document.querySelector(".showingCards").classList.remove("showingCards");
+  e.target.classList.add("showingCards");
+
+  //! Iteration
+
+  filterCards.forEach((cardss) => {
+    cardss.classList.add("hidden");
+
+    if (
+      cardss.dataset.name === e.target.dataset.name ||
+      e.target.dataset.name === "all"
+    ) {
+      cardss.classList.remove("hidden");
+    }
+  });
+};
 
 //!  Iteration
 
@@ -67,6 +88,12 @@ navLinks.forEach((currElema) => {
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener("click", () => {
     document.querySelector(".dropdown-menu").style.height = "0";
+  });
+});
+filterBtns.forEach((filterbtnss) => {
+  filterbtnss.addEventListener("click", ()=> {
+    /* filtercardss(); */
+    alert("Work In Progress...")
   });
 });
 

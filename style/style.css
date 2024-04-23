@@ -302,6 +302,56 @@ header {
 
 /***** End DropDown *****/
 
+/***** btn *****/
+
+
+.filter-btns {
+  width: 95%;
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.filterbtn {
+  padding: 1.2rem 4rem;
+  outline: none;
+  border: none;
+  border-radius: 33px;
+  font-size: 2rem;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  color: #fff;
+  font-weight: bold;
+  background: #0000006c;
+  box-shadow: rgb(122, 122, 122) 0px 0px 20px 0px inset, rgba(0, 0, 0, 0.397) 0px 50px 100px -20px inset, rgba(61, 61, 61, 0.801) 0px -2px 6px 0px inset;
+
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 0.88;
+  }
+}
+
+.showingCards {
+  background: #000000ad;
+  box-shadow: rgb(108, 0, 231) 0px 0px 25px 0px inset, rgba(0, 0, 0, 0.493) 0px 50px 100px -20px inset, rgb(212, 0, 255) 0px -2px 6px 0px inset;
+}
+
+/***** End btn *****/
+
 
 main {
   min-height: calc(100vh - 4.6rem);
@@ -903,6 +953,7 @@ main {
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        font-weight: bold;
 
         & a {
           display: flex;
@@ -927,7 +978,7 @@ main {
         display: none;
       }
 
-      & .card {
+      & .filtercard {
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -1037,6 +1088,11 @@ main {
           }
         }
       }
+
+      & .filtercard.hidden {
+        display: none;
+      }
+
     }
 
     .load-more-projects {
