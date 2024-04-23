@@ -199,11 +199,60 @@
             }
         }
     }
+
+    .filterbtn {
+        font-size: 2.6rem;
+    }
+
+    main {
+        .Latest-work {
+            .cards-container {
+                .filtercard {
+                    h1 {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        & .Latest-work {
+            & .cards-container {
+                & .filtercard {
+                    & .card-btn-container {
+                        & .btn {
+                            width: 15rem;
+                            height: 4.7rem;
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (width < 438px) {
     html {
         font-size: 38.5%;
+    }
+
+    main {
+        .Latest-work {
+            .cards-container {
+                .filtercard {
+                    h1 {
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .filterbtn {
+        font-size: 3rem;
     }
 
     main .profile-container .text-container .profile-details p {
