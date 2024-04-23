@@ -85,15 +85,17 @@ readMoreBtn.forEach((currElem) => {
 navLinks.forEach((currElema) => {
   currElema.addEventListener("click", activeClass);
 });
+
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener("click", () => {
     document.querySelector(".dropdown-menu").style.height = "0";
   });
 });
+
 filterBtns.forEach((filterbtnss) => {
-  filterbtnss.addEventListener("click", ()=> {
+  filterbtnss.addEventListener("click", () => {
     /* filtercardss(); */
-    alert("Work In Progress...")
+    alert("Work In Progress...");
   });
 });
 
@@ -104,7 +106,7 @@ dropDownBtn.addEventListener("click", dropDown);
 loadMoreProject.addEventListener("click", () => {
   alert("Work In Progress...");
 });
-
+cursor.style.display = "none";
 document.addEventListener("mousemove", (e) => {
   let x = e.clientX;
   let y = e.clientY;
