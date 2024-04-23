@@ -3,6 +3,7 @@ let dropDownBtn = document.querySelector(".menu");
 let navLinks = document.querySelectorAll(".nav-links a");
 let menuLinks = document.querySelectorAll("li");
 let loadMoreProject = document.getElementById("loadBtn");
+let cursor = document.querySelector(".cursor");
 let dropDownValue = false;
 let rMoreBtn = false;
 
@@ -75,4 +76,17 @@ dropDownBtn.addEventListener("click", dropDown);
 
 loadMoreProject.addEventListener("click", () => {
   alert("Work In Progress...");
+});
+
+document.addEventListener("mousemove", (e) => {
+  let x = e.clientX;
+  let y = e.clientY;
+
+  cursor.style.display = "block";
+  cursor.style.top = y + "px";
+  cursor.style.left = x + "px";
+});
+
+document.addEventListener("mouseout", () => {
+  cursor.style.display = "none";
 });

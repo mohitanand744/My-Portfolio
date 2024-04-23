@@ -21,7 +21,44 @@ body {
   position: relative;
 }
 
-.activeName {
+.cursor {
+  z-index: 9999;
+  background: linear-gradient(rgb(255, 0, 102), #3cf);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: fixed;
+  opacity: 0.8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #00eeff, 0 0 60px rgb(0, 255, 242), 0 0 100px #00ffe1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(rgb(255, 0, 102), #3cf);
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    -webkit-transform: translate(-30%, -30%);
+    -moz-transform: translate(-30%, -30%);
+    -ms-transform: translate(-30%, -30%);
+    -o-transform: translate(-30%, -30%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+  }
+}
+
+.activeName,
+.a {
   background: linear-gradient(rgb(255, 0, 102), #3cf);
   font-weight: 700;
   padding-bottom: 3px;
@@ -36,6 +73,20 @@ body {
   border-bottom: 5px solid rgb(255, 0, 102);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+
+}
+
+.rotate {
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+
+  &:hover {
+    rotate: 360deg;
+    scale: 1.1;
+  }
 }
 
 .moverighticon {
