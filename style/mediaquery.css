@@ -109,10 +109,12 @@
     }
 
     main {
-        & form {
-            & .btn {
-                font-size: 2.4rem;
-                height: 4.4rem;
+        .contact-form {
+            & form {
+                & .btn {
+                    font-size: 2.4rem;
+                    height: 4.4rem;
+                }
             }
         }
     }
@@ -168,23 +170,27 @@
 
 
     main {
-        form {
-            .input-group {
+        .contact-form {
+            form {
+                .input-group {
 
-                input,
-                textarea {
-                    font-size: 2rem;
-                    padding: 1.6rem;
+                    input,
+                    textarea {
+                        font-size: 2rem;
+                        padding: 1.6rem;
+                    }
                 }
             }
         }
     }
 
     main {
-        form {
-            .input-group {
-                & label {
-                    font-size: 2rem;
+        .contact-form {
+            form {
+                .input-group {
+                    & label {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
@@ -192,7 +198,7 @@
 }
 
 @media screen and (width < 500px) {
-    
+
     html {
         font-size: 45.5%;
     }
@@ -274,10 +280,12 @@
     }
 
     main {
-        & form {
-            & .btn {
-                font-size: 2.8rem;
-                height: 4.7rem;
+        & .contact-form {
+            & form {
+                & .btn {
+                    font-size: 2.8rem;
+                    height: 4.7rem;
+                }
             }
         }
     }
@@ -295,10 +303,12 @@
     }
 
     main {
-        form {
-            .input-group {
-                & label {
-                    font-size: 2.4rem;
+        .contact-form {
+            form {
+                .input-group {
+                    & label {
+                        font-size: 2.4rem;
+                    }
                 }
             }
         }
@@ -475,21 +485,25 @@
     }
 
     main {
-        & form {
-            & .btn {
-                font-size: 2.4rem;
-                height: 4.3rem;
+        & .contact-form {
+            & form {
+                & .btn {
+                    font-size: 2.4rem;
+                    height: 4.3rem;
+                }
             }
         }
     }
 
     main {
-        form {
-            padding: 1.3rem;
+        .contact-form {
+            form {
+                padding: 1.3rem;
 
-            .input-group {
-                & label {
-                    font-size: 2rem;
+                .input-group {
+                    & label {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
