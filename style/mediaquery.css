@@ -24,6 +24,12 @@
         background-size: 18%;
     }
 
+    footer {
+        & .row {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
     html {
         font-size: 56.5%;
     }
@@ -62,6 +68,12 @@
 @media screen and (width < 800px) {
     html {
         font-size: 53.5%;
+    }
+
+    footer {
+        & .row {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     main {
@@ -108,6 +120,12 @@
         background-size: 30%;
     }
 
+    footer {
+        & .row {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
     main {
         .contact-form {
             & form {
@@ -115,6 +133,14 @@
                     font-size: 2.4rem;
                     height: 4.4rem;
                 }
+            }
+        }
+    }
+
+    footer {
+        & .row {
+            & .col {
+                text-align: left;
             }
         }
     }

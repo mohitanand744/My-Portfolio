@@ -32,9 +32,11 @@ let dropDown = () => {
   if (!dropDownValue) {
     document.querySelector(".dropdown-menu").style.height = "310px";
     document.querySelector(".dropdown-menu").style.display = "flex";
+    dropDownBtn.classList.add("rotate");
     dropDownValue = true;
   } else {
     document.querySelector(".dropdown-menu").style.height = "0";
+    dropDownBtn.classList.remove("rotate");
     dropDownValue = false;
   }
 };
