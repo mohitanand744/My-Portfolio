@@ -60,7 +60,7 @@
         <a href="#skills">Skills</a>
         <a href="#latestWork">Projects</a>
         <a href="#Experience">Experience</a>
-        <a href="#Contact">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -342,8 +342,12 @@
           <button class="filterbtn showingCards" data-name="all">All</button>
           <button class="filterbtn" data-name="htmlcss">HTML / CSS</button>
           <button class="filterbtn" data-name="javascript">JavaScript</button>
-          <button class="filterbtn" data-name="react">React / Tailwind CSS</button>
-          <button class="filterbtn" data-name="react">Next / Tailwind CSS</button>
+          <button class="filterbtn" data-name="react">
+            React / Tailwind CSS
+          </button>
+          <button class="filterbtn" data-name="react">
+            Next / Tailwind CSS
+          </button>
         </div>
 
         <div class="cards-container" data-aos="fade-in">
@@ -517,6 +521,31 @@
         <div class="load-more-projects">
           <a href="#" id="loadBtn" class="btn">Load More Projects</a>
         </div>
+      </div>
+
+      <div class="contact-form" id="contact"  data-aos="fade-in">
+        <form action="https://formspree.io/f/xpzvpoeo" method="POST">
+          <h3 class="activeName">Contact Me</h3>
+          <div class="row">
+            <div class="input-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name"> Your Name</label>
+            </div>
+            <div class="input-group">
+              <input type="number" id="age" name="number" required />
+              <label for="age">Age</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" id="email" required />
+            <label for="email"> Email</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" name="message" required rows="8"></textarea>
+            <label for="message"> Explain your query!?</label>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
       </div>
     </main>
 

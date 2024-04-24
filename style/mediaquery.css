@@ -108,6 +108,15 @@
         background-size: 30%;
     }
 
+    main {
+        & form {
+            & .btn {
+                font-size: 2.4rem;
+                height: 4.4rem;
+            }
+        }
+    }
+
     main .Experience-timeLine {
         max-width: 95%;
 
@@ -154,6 +163,30 @@
         & .btn {
             width: 60%;
             font-size: 3rem;
+        }
+    }
+
+
+    main {
+        form {
+            .input-group {
+
+                input,
+                textarea {
+                    font-size: 2rem;
+                    padding: 1.6rem;
+                }
+            }
+        }
+    }
+
+    main {
+        form {
+            .input-group {
+                & label {
+                    font-size: 2rem;
+                }
+            }
         }
     }
 }
@@ -240,12 +273,31 @@
     }
 
     main {
+        & form {
+            & .btn {
+                font-size: 2.8rem;
+                height: 4.7rem;
+            }
+        }
+    }
+
+    main {
         .Latest-work {
             .cards-container {
                 .filtercard {
                     h1 {
                         font-size: 4rem;
                     }
+                }
+            }
+        }
+    }
+
+    main {
+        form {
+            .input-group {
+                & label {
+                    font-size: 2.4rem;
                 }
             }
         }
@@ -417,6 +469,24 @@
 }
 
 @media screen and (width < 360px) {
+    main {
+        & form {
+            & .btn {
+                font-size: 2.4rem;
+                height: 4.3rem;
+            }
+        }
+    }
+    main {
+        form {
+            padding: 1.3rem;
+            .input-group {
+                & label {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
     main .Education .card-container .card .card-img img {
         width: 40rem;
     }
