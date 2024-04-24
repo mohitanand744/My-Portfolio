@@ -20,9 +20,11 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  background: url("../images/Mainbg1.jpg");
+  background: url("../images/Mainbg1.jpg"), url("https://png.pngtree.com/thumb_back/fh260/background/20230720/pngtree-blue-and-purple-neon-star-3d-art-background-with-a-cool-image_3705286.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
   background-position: top;
   position: relative;
 }
