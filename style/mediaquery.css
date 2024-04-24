@@ -192,6 +192,7 @@
 }
 
 @media screen and (width < 500px) {
+    
     html {
         font-size: 45.5%;
     }
@@ -469,6 +470,10 @@
 }
 
 @media screen and (width < 360px) {
+    .filterbtn {
+        width: 100%;
+    }
+
     main {
         & form {
             & .btn {
@@ -477,9 +482,11 @@
             }
         }
     }
+
     main {
         form {
             padding: 1.3rem;
+
             .input-group {
                 & label {
                     font-size: 2rem;
@@ -487,6 +494,7 @@
             }
         }
     }
+
     main .Education .card-container .card .card-img img {
         width: 40rem;
     }
