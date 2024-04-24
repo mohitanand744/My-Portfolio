@@ -26,10 +26,12 @@ body {
   background-position: top;
   position: relative;
 }
-.rotate{
+
+.rotate {
   rotate: 360deg;
   scale: 1.1;
 }
+
 .cursor {
   z-index: 9999;
   background: linear-gradient(rgb(255, 0, 102), #3cf);
@@ -226,7 +228,8 @@ header {
   width: 300px;
   /*height: 310px;
   */
-  height: 0; box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+  height: 0;
+  box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
   background: rgba(0, 0, 0, 0.842);
   border-radius: 10px;
   overflow: hidden;
@@ -359,8 +362,8 @@ header {
 }
 
 .showingCards {
-  background: #000000ad;
-  box-shadow: rgb(108, 0, 231) 0px 0px 25px 0px inset, rgba(0, 0, 0, 0.493) 0px 50px 100px -20px inset, rgb(212, 0, 255) 0px -2px 6px 0px inset;
+  box-shadow: rgba(18, 1, 255, 0.521) 0px 20px 30px -20px inset, rgba(146, 0, 243, 0.527) 0px 20px 60px -30px inset, rgb(174, 0, 255) 0px -2px 6px 0px inset;
+  background: rgba(0, 0, 0, 0.842);
 }
 
 /***** End btn *****/
@@ -1006,8 +1009,8 @@ main {
         -ms-border-radius: 2rem;
         -o-border-radius: 2rem;
         gap: 2.6rem;
-        background-color: rgba(0, 0, 0, 0.336);
-        box-shadow: rgba(0, 212, 219, 0.616) 0px 50px 100px -20px inset, rgba(195, 0, 255, 0.918) 0px 50px 100px -20px inset, rgba(212, 0, 255, 0.801) 0px -2px 6px 0px inset;
+        box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px 20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+        background: rgba(0, 0, 0, 0.842);
 
         & .img-container {
           padding: 0.9rem;
@@ -1186,11 +1189,11 @@ main {
     form {
       max-width: 70rem;
       margin: 10rem auto;
-      background: rgba(0, 0, 0, 0.459);
       padding: 3rem;
       border-radius: 1.5rem;
       text-align: center;
-      box-shadow: rgba(1, 183, 255, 0.39) 0px 50px 100px -20px inset, rgba(166, 0, 243, 0.527) 0px 30px 60px -30px inset, rgba(114, 0, 221, 0.795) 0px -2px 6px 0px inset;
+      box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+      background: rgba(0, 0, 0, 0.842);
 
       & .input-group {
         margin-bottom: 3.5rem;
@@ -1339,7 +1342,8 @@ main {
 /***** Footer Section *****/
 footer {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.521);
+  box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+  background: rgba(0, 0, 0, 0.842);
   border-top-right-radius: 6rem;
   border-top-left-radius: 6rem;
   padding: 10rem;
