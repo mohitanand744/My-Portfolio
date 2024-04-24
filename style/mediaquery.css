@@ -203,6 +203,11 @@
         font-size: 45.5%;
     }
 
+    .cursor {
+        display: none;
+        visibility: hidden;
+    }
+
     main .Experience-timeLine {
         max-width: 100%;
 
