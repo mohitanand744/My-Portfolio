@@ -95,9 +95,8 @@ menuLinks.forEach((menuLink) => {
 });
 
 filterBtns.forEach((filterbtnss) => {
-  filterbtnss.addEventListener("click", () => {
-    /* filtercardss(); */
-    alert("Work In Progress...");
+  filterbtnss.addEventListener("click", (e) => {
+    filtercardss(e);
   });
 });
 
