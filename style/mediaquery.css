@@ -494,7 +494,7 @@
   .dropdown-menu {
     right: 10px;
     width: 95%;
-    gap: 1rem;
+    gap: 1.8rem;
 
     & li .s {
       font-size: 4rem;
