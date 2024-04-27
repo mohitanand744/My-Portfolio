@@ -1,550 +1,584 @@
 @media screen and (width < 1200px) {
-    html {
-        font-size: 58.5%;
-    }
+  html {
+    font-size: 58.5%;
+  }
 
-    .profile-container {
-        padding-top: 13rem;
-        flex-direction: column;
-        gap: 5rem;
+  .profile-container {
+    padding-top: 13rem;
+    flex-direction: column;
+    gap: 5rem;
 
-        & .profile-image-container {
-            width: 32rem;
-            height: 32rem;
-        }
+    & .profile-image-container {
+      width: 32rem;
+      height: 32rem;
     }
+  }
 
-    .text-container {
-        order: 2;
-    }
+  .text-container {
+    order: 2;
+  }
 }
 
 @media screen and (width < 938px) {
-    #preloader {
-        background-size: 18%;
+  #preloader {
+    background-size: 18%;
+  }
+
+  footer {
+    & .row {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  html {
+    font-size: 56.5%;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  header {
+    & .menu {
+      display: block;
+      cursor: pointer;
     }
 
-    footer {
-        & .row {
-            grid-template-columns: repeat(3, 1fr);
-        }
+    & .nav-links {
+      display: none;
     }
+  }
 
-    html {
-        font-size: 56.5%;
+  main .Education .card-container .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  main .Experience-timeLine {
+    &::after {
+      left: 16px;
+      top: 40%;
     }
-
-    .dropdown-menu {
-        display: none;
-    }
-
-    header {
-        & .menu {
-            display: block;
-            cursor: pointer;
-        }
-
-        & .nav-links {
-            display: none;
-        }
-    }
-
-    main .Education .card-container .card {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-    }
-
-    main .Experience-timeLine {
-
-        &::after {
-            left: 16px;
-            top: 40%;
-        }
-    }
+  }
 }
 
 @media screen and (width < 800px) {
-    html {
-        font-size: 53.5%;
+  html {
+    font-size: 53.5%;
+  }
+
+  footer {
+    & .row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  main {
+    & .about-container {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+    }
+  }
+
+  main .Experience-timeLine {
+    max-width: 85%;
+
+    &::after {
+      left: 4px;
     }
 
-    footer {
-        & .row {
-            grid-template-columns: repeat(2, 1fr);
+    & .timeline-container {
+      width: 100%;
+
+      & .timeline-txt-box {
+        & .left-arrow,
+        .right-container {
+          border-right: 15px solid #91919179;
+          border-left: 0;
+          left: -15px;
         }
+      }
     }
 
-    main {
-        & .about-container {
-            grid-template-columns: repeat(1, 1fr);
-            margin: 0 auto;
-        }
+    & .right-container {
+      left: 0;
     }
 
-    main .Experience-timeLine {
-        max-width: 85%;
-
-        &::after {
-            left: 4px;
-        }
-
-        & .timeline-container {
-            width: 100%;
-
-            & .timeline-txt-box {
-
-                & .left-arrow,
-                .right-container {
-                    border-right: 15px solid #91919179;
-                    border-left: 0;
-                    left: -15px;
-                }
-            }
-        }
-
-        & .right-container {
-            left: 0;
-        }
-
-        & .left-container img,
-        .right-container img {
-            left: -20px;
-        }
+    & .left-container img,
+    .right-container img {
+      left: -20px;
     }
+  }
 }
 
 @media screen and (width < 648px) {
-    #preloader {
-        background-size: 30%;
+  #preloader {
+    background-size: 30%;
+  }
+
+  footer {
+    & .row {
+      grid-template-columns: repeat(1, 1fr);
     }
+  }
 
-    footer {
-        & .row {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    main {
-        .contact-form {
-            & form {
-                & .btn {
-                    font-size: 2.4rem;
-                    height: 4.4rem;
-                }
-            }
-        }
-    }
-
-    footer {
-        & .row {
-            & .col {
-                text-align: left;
-            }
-        }
-    }
-
-    main .Experience-timeLine {
-        max-width: 95%;
-
-        &::after {
-            left: 4px;
-        }
-
-        & .timeline-container {
-            width: 100%;
-
-            & .timeline-txt-box {
-
-                & .left-arrow,
-                .right-container {
-                    border-right: 15px solid #91919179;
-                    border-left: 0;
-                    left: -15px;
-                }
-            }
-        }
-    }
-
-    main .Latest-work .cards-container {
-        max-width: 92%;
-    }
-
-    .dropdown-menu {
-        right: 10px;
-        width: 95%;
-
-        & li {
-
-            padding: 1.1rem 1rem;
-        }
-
-        & li .s {
-            font-size: 3rem;
-        }
-
-        & li a {
-            font-size: 3rem;
-        }
-
+  main {
+    .contact-form {
+      & form {
         & .btn {
-            width: 60%;
-            font-size: 3rem;
+          font-size: 2.4rem;
+          height: 4.4rem;
         }
+      }
+    }
+  }
+
+  footer {
+    & .row {
+      & .col {
+        text-align: left;
+      }
+    }
+  }
+
+  main .Experience-timeLine {
+    max-width: 95%;
+
+    &::after {
+      left: 4px;
     }
 
+    & .timeline-container {
+      width: 100%;
 
-    main {
-        .contact-form {
-            form {
-                .input-group {
-
-                    input,
-                    textarea {
-                        font-size: 2rem;
-                        padding: 1.6rem;
-                    }
-                }
-            }
+      & .timeline-txt-box {
+        & .left-arrow,
+        .right-container {
+          border-right: 15px solid #91919179;
+          border-left: 0;
+          left: -15px;
         }
+      }
+    }
+  }
+
+  main .Latest-work .cards-container {
+    max-width: 92%;
+  }
+
+  .dropdown-menu {
+    right: 10px;
+    width: 95%;
+
+    & li {
+      padding: 1.1rem 1rem;
     }
 
-    main {
-        .contact-form {
-            form {
-                .input-group {
-                    & label {
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
+    & li .s {
+      font-size: 3rem;
     }
+
+    & li a {
+      font-size: 3rem;
+    }
+
+    & .btn {
+      width: 60%;
+      font-size: 3rem;
+    }
+  }
+
+  main {
+    .contact-form {
+      form {
+        .input-group {
+          input,
+          textarea {
+            font-size: 2rem;
+            padding: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .contact-form {
+      form {
+        .input-group {
+          & label {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (width < 500px) {
+  html {
+    font-size: 45.5%;
+  }
+  footer {
+    & .row {
+      & .col {
+        & .youtube {
+          & .moverighticon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    & .row {
+      & .col {
+        & h3 {
+          font-size: 3.5rem;
+        }
+        & .links {
+          & a {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .cursor {
+    display: none;
+    visibility: hidden;
+  }
 
-    html {
-        font-size: 45.5%;
+  main .Experience-timeLine {
+    max-width: 100%;
+
+    &::after {
+      left: 4px;
     }
 
-    .cursor {
-        display: none;
-        visibility: hidden;
-    }
+    & .timeline-container {
+      width: 100%;
 
-    main .Experience-timeLine {
-        max-width: 100%;
-
-        &::after {
-            left: 4px;
+      & .timeline-txt-box {
+        & .left-arrow,
+        .right-container {
+          border-right: 15px solid #91919179;
+          border-left: 0;
+          left: -15px;
         }
 
-        & .timeline-container {
-            width: 100%;
+        & h2 {
+          font-weight: 600;
+          font-size: 3.5rem;
+        }
 
-            & .timeline-txt-box {
+        & small {
+          display: inline-block;
+          margin-bottom: 1.5rem;
+          font-size: 2rem;
+        }
 
-                & .left-arrow,
-                .right-container {
-                    border-right: 15px solid #91919179;
-                    border-left: 0;
-                    left: -15px;
-                }
+        & p {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
 
-                & h2 {
-                    font-weight: 600;
-                    font-size: 3.5rem;
-                }
+  .filterbtn {
+    font-size: 2.6rem;
+  }
 
-                & small {
-                    display: inline-block;
-                    margin-bottom: 1.5rem;
-                    font-size: 2rem;
-                }
+  main {
+    .Latest-work {
+      .cards-container {
+        .filtercard {
+          h1 {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
 
-                & p {
-                    font-size: 2.2rem;
-                }
+  main {
+    & .Latest-work {
+      & .cards-container {
+        & .filtercard {
+          & .card-btn-container {
+            & .btn {
+              width: 15rem;
+              height: 4.7rem;
+              font-size: 2.3rem;
             }
+          }
         }
+      }
     }
-
-    .filterbtn {
-        font-size: 2.6rem;
-    }
-
-    main {
-        .Latest-work {
-            .cards-container {
-                .filtercard {
-                    h1 {
-                        font-size: 3.5rem;
-                    }
-                }
-            }
-        }
-    }
-
-    main {
-        & .Latest-work {
-            & .cards-container {
-                & .filtercard {
-                    & .card-btn-container {
-                        & .btn {
-                            width: 15rem;
-                            height: 4.7rem;
-                            font-size: 2.3rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
+  }
 }
 
 @media screen and (width < 438px) {
-    html {
-        font-size: 38.5%;
-    }
-
-    main {
-        & .contact-form {
-            & form {
-                & .btn {
-                    font-size: 2.8rem;
-                    height: 4.7rem;
-                }
-            }
-        }
-    }
-
-    main {
-        .Latest-work {
-            .cards-container {
-                .filtercard {
-                    h1 {
-                        font-size: 4rem;
-                    }
-                }
-            }
-        }
-    }
-
-    main {
-        .contact-form {
-            form {
-                .input-group {
-                    & label {
-                        font-size: 2.4rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .filterbtn {
-        font-size: 3rem;
-    }
-
-    main .profile-container .text-container .profile-details p {
-        font-size: 2.8rem;
-    }
-
-    main .profile-container .text-container .social-media-icons img {
-        width: 40px;
-    }
-
-    main .about-container .about-txt .details-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    main .about-container .about-txt .details-container .details-1 p {
-        font-size: 2.3rem;
-    }
-
-    main .about-container .about-txt .details-container .details-2 p {
-        font-size: 2.3rem;
-    }
-
-    main .about-container .about-txt p {
-        font-size: 2.5rem;
-    }
-
-    main .profile-container .text-container .profile-details h1 {
-        font-size: 5.5rem;
-    }
-
-    main .Experience-timeLine {
-        & .timeline-container {
-
-            & .timeline-txt-box {
-                margin-left: 8rem;
-
-                & h2 {
-                    font-weight: 600;
-                    font-size: 4rem;
-                }
-
-                & small {
-                    display: inline-block;
-                    margin-bottom: 1.5rem;
-                    font-size: 2.3rem;
-                }
-
-                & p {
-                    font-size: 2.5rem;
-                }
-            }
-        }
-    }
-
-    main .Experience-timeLine {
-
-        &::after {
-            left: 12px;
-            top: 33%;
-        }
-    }
-
-    main .Experience-timeLine .right-container img {
-        left: -4px;
-    }
-
-    main .profile-container .text-container .profile-details h1 .work {
-        font-size: 4rem;
-    }
-
-
-    main .profile-container .profile-image-container {
-        width: 46rem;
-        height: 46rem;
-    }
-
-    main .profile-container .profile-image-container .glowing-circle .profile-img img {
-        width: 45rem;
-        height: 45rem;
-    }
-
-    main .profile-container .profile-image-container .glowing-circle .profile-img {
-        width: 45rem;
-        height: 45rem;
-    }
-
-    main .Education p {
-        font-size: 2.5rem;
-    }
-
-    main .Education .card-container .card .card-txt h4 {
-
-        font-size: 2.4rem;
-    }
-
-    main .Education .card-container .card .card-txt {
-        text-align: center;
-    }
-
-    main .Experience-timeLine .Ex-top p {
-        font-size: 2.5rem;
-    }
-
-    main .profile-container .text-container .profile-details .btn-container .btn {
-        font-size: 2.5rem;
-        height: 5.3rem;
-    }
-
-    .dropdown-menu {
-        right: 10px;
-        width: 95%;
-        gap: 1rem;
-
-        & li .s {
-            font-size: 4rem;
-        }
-
-        & li a {
-            font-size: 3.5rem;
-        }
-
+  html {
+    font-size: 38.5%;
+  }
+  .moverighticon {
+    width: 4rem;
+    height: 4rem;
+    filter: drop-shadow(5px 5px 5px #020202);
+    -webkit-filter: drop-shadow(5px 5px 5px #020202);
+}
+  main {
+    & .about-container {
+      & .about-txt {
         & .btn {
-            width: 60%;
-            font-size: 3rem;
+          font-size: 2.4rem;
         }
+      }
     }
-
-    main .Latest-work .cards-container .card {
-        padding: 1.5rem;
-    }
-
-    header .logo-container .logo {
-        width: 15rem;
-    }
-
-    main .Latest-work .cards-container .card .img-container img {
-        padding: 0.4rem;
-    }
-
-    main .Latest-work .cards-container .card h1 {
-        font-size: 4rem;
-    }
-
-    main .Latest-work .cards-container .card .card-btn-container .btn {
-        font-size: 2.5rem;
-        width: 15rem;
-        height: 5rem;
-    }
-
-    main .Latest-work .latest-top p {
-        font-size: 2.6rem;
-    }
-
-    main .Experience-timeLine {
-
-        &::after {
-            left: 16px;
-            top: 37%;
+  }
+  main {
+    & .contact-form {
+      & form {
+        & .btn {
+          font-size: 2.8rem;
+          height: 4.7rem;
         }
+      }
     }
+  }
+
+  main {
+    .Latest-work {
+      .cards-container {
+        .filtercard {
+          h1 {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .contact-form {
+      form {
+        .input-group {
+          & label {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .filterbtn {
+    font-size: 3rem;
+  }
+
+  main .profile-container .text-container .profile-details p {
+    font-size: 2.8rem;
+  }
+
+  main .profile-container .text-container .social-media-icons img {
+    width: 40px;
+  }
+
+  main .about-container .about-txt .details-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .about-container .about-txt .details-container .details-1 p {
+    font-size: 2.3rem;
+  }
+
+  main .about-container .about-txt .details-container .details-2 p {
+    font-size: 2.3rem;
+  }
+
+  main .about-container .about-txt p {
+    font-size: 2.5rem;
+  }
+
+  main .profile-container .text-container .profile-details h1 {
+    font-size: 5.5rem;
+  }
+
+  main .Experience-timeLine {
+    & .timeline-container {
+      & .timeline-txt-box {
+        margin-left: 8rem;
+
+        & h2 {
+          font-weight: 600;
+          font-size: 4rem;
+        }
+
+        & small {
+          display: inline-block;
+          margin-bottom: 1.5rem;
+          font-size: 2.3rem;
+        }
+
+        & p {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  main .Experience-timeLine {
+    &::after {
+      left: 12px;
+      top: 33%;
+    }
+  }
+
+  main .Experience-timeLine .right-container img {
+    left: -4px;
+  }
+
+  main .profile-container .text-container .profile-details h1 .work {
+    font-size: 4rem;
+  }
+
+  main .profile-container .profile-image-container {
+    width: 46rem;
+    height: 46rem;
+  }
+
+  main
+    .profile-container
+    .profile-image-container
+    .glowing-circle
+    .profile-img
+    img {
+    width: 45rem;
+    height: 45rem;
+  }
+
+  main
+    .profile-container
+    .profile-image-container
+    .glowing-circle
+    .profile-img {
+    width: 45rem;
+    height: 45rem;
+  }
+
+  main .Education p {
+    font-size: 2.5rem;
+  }
+
+  main .Education .card-container .card .card-txt h4 {
+    font-size: 2.4rem;
+  }
+
+  main .Education .card-container .card .card-txt {
+    text-align: center;
+  }
+
+  main .Experience-timeLine .Ex-top p {
+    font-size: 2.5rem;
+  }
+
+  main .profile-container .text-container .profile-details .btn-container .btn {
+    font-size: 2.5rem;
+    height: 5.3rem;
+  }
+
+  .dropdown-menu {
+    right: 10px;
+    width: 95%;
+    gap: 1rem;
+
+    & li .s {
+      font-size: 4rem;
+    }
+
+    & li a {
+      font-size: 3.5rem;
+    }
+
+    & .btn {
+      width: 60%;
+      font-size: 3rem;
+    }
+  }
+
+  main .Latest-work .cards-container .card {
+    padding: 1.5rem;
+  }
+
+  header .logo-container .logo {
+    width: 15rem;
+  }
+
+  main .Latest-work .cards-container .card .img-container img {
+    padding: 0.4rem;
+  }
+
+  main .Latest-work .cards-container .card h1 {
+    font-size: 4rem;
+  }
+
+  main .Latest-work .cards-container .card .card-btn-container .btn {
+    font-size: 2.5rem;
+    width: 15rem;
+    height: 5rem;
+  }
+
+  main .Latest-work .latest-top p {
+    font-size: 2.6rem;
+  }
+
+  main .Experience-timeLine {
+    &::after {
+      left: 16px;
+      top: 37%;
+    }
+  }
 }
 
 @media screen and (width < 360px) {
-    .filterbtn {
-        width: 100%;
-    }
+  .filterbtn {
+    width: 100%;
+  }
 
-    main {
-        & .contact-form {
-            & form {
-                & .btn {
-                    font-size: 2.4rem;
-                    height: 4.3rem;
-                }
-            }
+  main {
+    & .contact-form {
+      & form {
+        & .btn {
+          font-size: 2.4rem;
+          height: 4.3rem;
         }
+      }
     }
+  }
 
-    main {
-        .contact-form {
-            form {
-                padding: 1.3rem;
+  main {
+    .contact-form {
+      form {
+        padding: 1.3rem;
 
-                .input-group {
-                    & label {
-                        font-size: 2rem;
-                    }
-                }
-            }
+        .input-group {
+          & label {
+            font-size: 2rem;
+          }
         }
+      }
     }
+  }
 
-    main .Education .card-container .card .card-img img {
-        width: 40rem;
-    }
+  main .Education .card-container .card .card-img img {
+    width: 40rem;
+  }
 
-    main .profile-container .text-container .profile-details h1 {
-        font-size: 4.6rem;
-    }
+  main .profile-container .text-container .profile-details h1 {
+    font-size: 4.6rem;
+  }
 }

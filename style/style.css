@@ -946,7 +946,7 @@ main {
 
   .Latest-work {
     width: 100%;
-    padding: 12rem 0;
+    padding: 12rem 0 0 0;
     display: flex;
     flex-direction: column;
 
@@ -1111,7 +1111,7 @@ main {
     }
 
     .load-more-projects {
-      margin: 3rem auto;
+      margin: 3rem auto auto auto;
 
       & .btn {
         position: relative;
@@ -1187,7 +1187,7 @@ main {
 
     form {
       max-width: 70rem;
-      margin: 10rem auto;
+      margin: 12rem auto;
       padding: 3rem;
       border-radius: 1.5rem;
       text-align: center;
