@@ -69,6 +69,15 @@ let filtercardss = (e) => {
     cardss.classList.add("hidden");
 
     if (
+      e.target.dataset.name === "react" ||
+      e.target.dataset.name === "reactapi"
+    ) {
+      loadMoreProject.innerText = "Work in progress...";
+    } else {
+      loadMoreProject.innerText = "Load More Project";
+    }
+
+    if (
       cardss.dataset.name === e.target.dataset.name ||
       e.target.dataset.name === "all"
     ) {

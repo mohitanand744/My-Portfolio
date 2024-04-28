@@ -10,7 +10,6 @@
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
-
 }
 
 html {
@@ -47,7 +46,7 @@ body {
   -o-transition: 0.2s;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     background: linear-gradient(rgb(255, 0, 102), #3cf);
     width: 50px;
@@ -63,7 +62,6 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-
   }
 }
 
@@ -83,7 +81,6 @@ body {
   border-bottom: 5px solid rgb(255, 0, 102);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
 }
 
 .rotate {
@@ -210,7 +207,6 @@ header {
   cursor: pointer;
 }
 
-
 /***** DropDown *****/
 
 .dropdown-menu {
@@ -223,7 +219,9 @@ header {
   /*height: 310px;
   */
   height: 0;
-  box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+  box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset,
+    rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset,
+    rgb(183, 0, 255) 0px -2px 6px 0px inset;
   background: rgba(0, 0, 0, 0.564);
   border-radius: 10px;
   overflow: hidden;
@@ -314,7 +312,6 @@ header {
 
 /***** btn *****/
 
-
 .filter-btns {
   width: 95%;
   max-width: 70%;
@@ -343,8 +340,9 @@ header {
   color: #fff;
   font-weight: bold;
   background: #0000006c;
-  box-shadow: rgb(122, 122, 122) 0px 0px 20px 0px inset, rgba(0, 0, 0, 0.397) 0px 50px 100px -20px inset, rgba(61, 61, 61, 0.801) 0px -2px 6px 0px inset;
-
+  box-shadow: rgb(122, 122, 122) 0px 0px 20px 0px inset,
+    rgba(0, 0, 0, 0.397) 0px 50px 100px -20px inset,
+    rgba(61, 61, 61, 0.801) 0px -2px 6px 0px inset;
 
   &:hover {
     scale: 1.1;
@@ -356,12 +354,13 @@ header {
 }
 
 .showingCards {
-  box-shadow: rgba(18, 1, 255, 0.521) 0px 20px 30px -20px inset, rgba(146, 0, 243, 0.527) 0px 20px 60px -30px inset, rgb(174, 0, 255) 0px -2px 6px 0px inset;
+  box-shadow: rgba(18, 1, 255, 0.521) 0px 20px 30px -20px inset,
+    rgba(146, 0, 243, 0.527) 0px 20px 60px -30px inset,
+    rgb(174, 0, 255) 0px -2px 6px 0px inset;
   background: rgba(0, 0, 0, 0.842);
 }
 
 /***** End btn *****/
-
 
 main {
   min-height: calc(100vh - 4.6rem);
@@ -806,7 +805,6 @@ main {
         -o-border-radius: 3.5rem;
 
         & .card-img {
-
           & img {
             width: 45rem;
             border-radius: 3rem;
@@ -840,7 +838,6 @@ main {
     max-width: 68%;
     padding: 12rem 0;
 
-
     & .Ex-top {
       text-align: center;
       margin-bottom: 5rem;
@@ -873,7 +870,9 @@ main {
         -ms-border-radius: 1.5rem;
         -o-border-radius: 1.5rem;
         font-size: 1.5rem;
-        box-shadow: rgba(26, 26, 26, 0.25) 0px 50px 100px -20px, rgba(15, 15, 15, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -1px 6px 2px inset;
+        box-shadow: rgba(26, 26, 26, 0.25) 0px 50px 100px -20px,
+          rgba(15, 15, 15, 0.3) 0px 30px 60px -30px,
+          rgba(255, 255, 255, 0.35) 0px -1px 6px 2px inset;
 
         & h2 {
           font-weight: 600;
@@ -888,11 +887,7 @@ main {
 
         & p {
           font-size: 1.8rem;
-
-
         }
-
-
 
         & .right-arrow {
           height: 0;
@@ -925,7 +920,7 @@ main {
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 6px;
       height: 60%;
@@ -940,9 +935,7 @@ main {
       -ms-border-radius: 5rem;
       -o-border-radius: 5rem;
     }
-
   }
-
 
   .Latest-work {
     width: 100%;
@@ -1008,7 +1001,9 @@ main {
         -ms-border-radius: 2rem;
         -o-border-radius: 2rem;
         gap: 2.6rem;
-        box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px 20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+        box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px 20px inset,
+          rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset,
+          rgb(183, 0, 255) 0px -2px 6px 0px inset;
         background: rgba(0, 0, 0, 0.842);
 
         & .img-container {
@@ -1023,7 +1018,8 @@ main {
             -moz-border-radius: 4rem;
             -ms-border-radius: 4rem;
             -o-border-radius: 4rem;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+              rgba(0, 0, 0, 0.22) 0px 10px 10px;
           }
         }
 
@@ -1107,7 +1103,6 @@ main {
       & .filtercard.hidden {
         display: none;
       }
-
     }
 
     .load-more-projects {
@@ -1134,13 +1129,17 @@ main {
         animation: zoomIn 0.3s linear infinite alternate;
         -webkit-animation: zoomIn 0.3s linear infinite alternate;
 
-
         &::before {
           content: "";
           position: absolute;
           top: 0;
           inset: 0;
-          background: linear-gradient(60deg, rgba(174, 0, 255, 0.947), rgba(0, 78, 245, 0.555), rgb(236, 0, 95));
+          background: linear-gradient(
+            60deg,
+            rgba(174, 0, 255, 0.947),
+            rgba(0, 78, 245, 0.555),
+            rgb(236, 0, 95)
+          );
           z-index: -1;
           border-radius: 4rem;
           -webkit-border-radius: 4rem;
@@ -1158,7 +1157,12 @@ main {
           position: absolute;
           top: 0;
           inset: 0;
-          background: linear-gradient(45deg, rgba(174, 0, 255, 0.947), rgba(0, 78, 245, 0.555), rgb(236, 0, 95));
+          background: linear-gradient(
+            45deg,
+            rgba(174, 0, 255, 0.947),
+            rgba(0, 78, 245, 0.555),
+            rgb(236, 0, 95)
+          );
           z-index: -1;
           background-position: 0 0;
           border-radius: 4rem;
@@ -1181,7 +1185,6 @@ main {
     }
   }
 
-
   .contact-form {
     width: 100%;
 
@@ -1191,7 +1194,9 @@ main {
       padding: 3rem;
       border-radius: 1.5rem;
       text-align: center;
-      box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+      box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset,
+        rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset,
+        rgb(183, 0, 255) 0px -2px 6px 0px inset;
       background: rgba(0, 0, 0, 0.842);
 
       & .input-group {
@@ -1213,12 +1218,12 @@ main {
           -ms-border-radius: 1.4rem;
           -o-border-radius: 1.4rem;
 
-          &:focus~label {
+          &:focus ~ label {
             top: -3.5rem;
             font-size: 1.4rem;
           }
 
-          &:valid~label {
+          &:valid ~ label {
             top: -3.5rem;
             font-size: 1.4rem;
           }
@@ -1320,7 +1325,6 @@ main {
       }
     }
   }
-
 }
 
 main {
@@ -1337,11 +1341,12 @@ main {
   }
 }
 
-
 /***** Footer Section *****/
 footer {
   width: 100%;
-  box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset, rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset, rgb(183, 0, 255) 0px -2px 6px 0px inset;
+  box-shadow: rgba(18, 1, 255, 0.425) 0px 50px 100px -20px inset,
+    rgba(146, 0, 243, 0.527) 0px 30px 60px -30px inset,
+    rgb(183, 0, 255) 0px -2px 6px 0px inset;
   background: rgba(0, 0, 0, 0.842);
   border-top-right-radius: 6rem;
   border-top-left-radius: 6rem;
@@ -1359,7 +1364,6 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 2.6rem;
-
       & .links {
         display: flex;
         flex-direction: column;
@@ -1468,7 +1472,6 @@ footer {
 }
 
 /***** End scrollbar Section *****/
-
 
 @keyframes moveright {
   0% {
