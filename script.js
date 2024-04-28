@@ -6,6 +6,7 @@ let loadMoreProject = document.getElementById("loadBtn");
 let cursor = document.querySelector(".cursor");
 let filterBtns = document.querySelectorAll(".filterbtn");
 let filterCards = document.querySelectorAll(".filtercard");
+let goToTopBtn = document.querySelector(".gototop");
 let dropDownValue = false;
 let rMoreBtn = false;
 
@@ -110,6 +111,14 @@ filterBtns.forEach((filterbtnss) => {
 });
 
 // ! click Event
+
+window.onscroll =  () => {
+  if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+    goToTopBtn.style.display = "block";
+  } else {
+    goToTopBtn.style.display = "none";
+  }
+};
 
 dropDownBtn.addEventListener("click", dropDown);
 
