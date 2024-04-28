@@ -385,7 +385,7 @@ main {
 
   & .profile-container {
     width: 100%;
-    height: calc(100vh - 4.8rem);
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
