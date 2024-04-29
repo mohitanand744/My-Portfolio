@@ -423,6 +423,7 @@ main {
 
         & p {
           font-size: 2rem;
+          color: #e7e7e7;
         }
 
         & .btn-container {
