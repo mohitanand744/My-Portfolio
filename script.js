@@ -7,6 +7,7 @@ let cursor = document.querySelector(".cursor");
 let filterBtns = document.querySelectorAll(".filterbtn");
 let filterCards = document.querySelectorAll(".filtercard");
 let goToTopBtn = document.querySelector(".gototop");
+let filterBoxes = document.querySelectorAll(".filtercard");
 let dropDownValue = false;
 let rMoreBtn = false;
 
@@ -73,9 +74,9 @@ let filtercardss = (e) => {
       e.target.dataset.name === "react" ||
       e.target.dataset.name === "reactapi"
     ) {
-      loadMoreProject.innerText = "Work in progress...";
+      document.querySelector(".warn").innerText = "Work In Progress...";
     } else {
-      loadMoreProject.innerText = "Load More Project";
+      document.querySelector(".warn").innerText = "";
     }
 
     if (
@@ -112,8 +113,11 @@ filterBtns.forEach((filterbtnss) => {
 
 // ! click Event
 
-window.onscroll =  () => {
-  if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+window.onscroll = () => {
+  if (
+    document.body.scrollTop > 180 ||
+    document.documentElement.scrollTop > 180
+  ) {
     goToTopBtn.style.display = "block";
   } else {
     goToTopBtn.style.display = "none";
@@ -122,9 +126,6 @@ window.onscroll =  () => {
 
 dropDownBtn.addEventListener("click", dropDown);
 
-loadMoreProject.addEventListener("click", () => {
-  alert("Work In Progress...");
-});
 cursor.style.display = "none";
 document.addEventListener("mousemove", (e) => {
   let x = e.clientX;

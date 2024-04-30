@@ -37,6 +37,14 @@ body {
   display: none;
   z-index: 9999;
 }
+
+.warn {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f7e600;
+  margin-top: 4rem;
+}
 .cursor {
   z-index: 9999;
   background: linear-gradient(rgb(255, 0, 102), #3cf);
@@ -952,7 +960,7 @@ main {
 
   .Latest-work {
     width: 100%;
-    padding: 12rem 0 0 0;
+    padding: 5rem 0 0 0;
     display: flex;
     flex-direction: column;
 
@@ -986,7 +994,12 @@ main {
         }
       }
     }
-
+    & .shdo {
+      box-shadow: rgba(18, 1, 255, 0.521) 0px 20px 30px -20px inset,
+        rgba(146, 0, 243, 0.788) 0px 20px 60px -30px inset,
+        rgb(174, 0, 255) 0px -2px 6px 0px inset;
+      background: rgba(0, 0, 0, 0.842);
+    }
     & .cards-container {
       display: flex;
       justify-content: center;
@@ -1115,85 +1128,6 @@ main {
 
       & .filtercard.hidden {
         display: none;
-      }
-    }
-
-    .load-more-projects {
-      margin: 3rem auto auto auto;
-
-      & .btn {
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 4.6rem;
-        padding: 2rem;
-        border-radius: 2rem;
-        -webkit-border-radius: 2rem;
-        -moz-border-radius: 2rem;
-        -ms-border-radius: 2rem;
-        -o-border-radius: 2rem;
-        font-size: 1.9rem;
-        color: #fff;
-        font-weight: 600;
-        letter-spacing: 0.1rem;
-        z-index: 1;
-        animation: zoomIn 0.3s linear infinite alternate;
-        -webkit-animation: zoomIn 0.3s linear infinite alternate;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          inset: 0;
-          background: linear-gradient(
-            60deg,
-            rgba(174, 0, 255, 0.947),
-            rgba(0, 78, 245, 0.555),
-            rgb(236, 0, 95)
-          );
-          z-index: -1;
-          border-radius: 4rem;
-          -webkit-border-radius: 4rem;
-          -moz-border-radius: 4rem;
-          -ms-border-radius: 4rem;
-          -o-border-radius: 4rem;
-          background-size: 200%;
-          background-position: 0 0;
-          filter: blur(5px);
-          -webkit-filter: blur(5px);
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          inset: 0;
-          background: linear-gradient(
-            45deg,
-            rgba(174, 0, 255, 0.947),
-            rgba(0, 78, 245, 0.555),
-            rgb(236, 0, 95)
-          );
-          z-index: -1;
-          background-position: 0 0;
-          border-radius: 4rem;
-          -webkit-border-radius: 4rem;
-          -moz-border-radius: 4rem;
-          -ms-border-radius: 4rem;
-          -o-border-radius: 4rem;
-          background-size: 200%;
-          transition: 0.3s ease-in;
-          -webkit-transition: 0.3s ease-in;
-          -moz-transition: 0.3s ease-in;
-          -ms-transition: 0.3s ease-in;
-          -o-transition: 0.3s ease-in;
-        }
-
-        &:hover::after {
-          background-position: 100% 0;
-        }
       }
     }
   }
