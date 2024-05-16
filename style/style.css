@@ -891,9 +891,9 @@ main {
         -ms-border-radius: 1.5rem;
         -o-border-radius: 1.5rem;
         font-size: 1.5rem;
-        box-shadow: rgba(26, 26, 26, 0.25) 0px 50px 100px -20px,
-          rgba(15, 15, 15, 0.3) 0px 30px 60px -30px,
-          rgba(255, 255, 255, 0.35) 0px -1px 6px 2px inset;
+        box-shadow: rgba(92, 0, 240, 0.486) 0px 0px 100px -20px,
+          rgba(107, 0, 230, 0.445) 0px 0px 60px -30px,
+          rgba(132, 0, 255, 0.795) 0px -1px 6px 2px inset;
 
         & h2 {
           font-weight: 600;
