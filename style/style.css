@@ -163,9 +163,20 @@ header {
   z-index: 2;
 
   & .logo-container {
+    width: 7.5rem;
+    height: 7.5rem;
+    background: #f8f8f8;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     & .logo {
-      width: 8rem;
+      width: 7.6rem;
     }
   }
 
