@@ -319,6 +319,13 @@
       }
     }
   }
+  header {
+    & .logo-container {
+      & .logo {
+        width: 10.6rem;
+      }
+    }
+  }
 }
 
 @media screen and (width < 438px) {
@@ -524,7 +531,7 @@
   }
 
   header .logo-container .logo {
-    width: 15rem;
+    width: 10rem;
   }
 
   main .Latest-work .cards-container .card .img-container img {
