@@ -318,15 +318,7 @@
         }
       }
     }
-  }
-  header {
-    & .logo-container {
-      & .logo {
-        width: 10.6rem;
-      }
-    }
-  }
-}
+  }}
 
 @media screen and (width < 438px) {
   html {
@@ -528,10 +520,6 @@
   }
   main .Latest-work .cards-container .card {
     padding: 1.5rem;
-  }
-
-  header .logo-container .logo {
-    width: 10rem;
   }
 
   main .Latest-work .cards-container .card .img-container img {

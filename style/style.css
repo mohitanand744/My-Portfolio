@@ -163,8 +163,9 @@ header {
   z-index: 2;
 
   & .logo-container {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 7rem;
+    height: 7rem;
+    padding: 0.1px;
     background: #f8f8f8;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -176,7 +177,7 @@ header {
     align-items: center;
 
     & .logo {
-      width: 7.6rem;
+      width: 100%;
     }
   }
 
@@ -1286,7 +1287,89 @@ main {
 
 main {
   & .Latest-work {
+    & .pagination-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+      padding: 4rem;
+
+      & img {
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        &:hover {
+          scale: 1.2;
+        }
+        &:active {
+          scale: 0.79;
+        }
+      }
+
+      & .pages {
+        color: #fff;
+        width: 35px;
+        aspect-ratio: 1;
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #6b02f594;
+        border: 2px solid #6f00ff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+
+        &:hover {
+          scale: 1.2;
+        }
+      }
+
+      & span{
+        color: #fff;
+        width: 35px;
+        aspect-ratio: 1;
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #6b02f594;
+        border: 2px solid #6f00ff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
     & .cards-container {
+      & .filtercard.hide {
+        display: none;
+      }
+      & .filtercard.show {
+        display: flex;
+      }
       & .filtercard:hover {
         & .img-container {
           & img {
