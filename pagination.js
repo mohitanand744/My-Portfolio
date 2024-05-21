@@ -29,8 +29,6 @@ let showProjects = () => {
   }
 };
 
-dots[0].style.display = "none";
-prevBtn.style.display = "none";
 let checkBtnsStatus = () => {
   if (indexNum === pages) {
     dots[1].style.display = "none";
@@ -43,6 +41,9 @@ let checkBtnsStatus = () => {
   if (indexNum > 1) {
     dots[0].style.display = "flex";
     prevBtn.style.display = "block";
+  } else {
+    dots[0].style.display = "none";
+    prevBtn.style.display = "none";
   }
 };
 
