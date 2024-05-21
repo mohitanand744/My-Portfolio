@@ -26,6 +26,7 @@ let showProjects = () => {
     }
 
     pageNum.innerHTML = `${indexNum}`;
+    dots[2].innerText = pages;
   }
 };
 
@@ -45,14 +46,20 @@ let checkBtnsStatus = () => {
     dots[0].style.display = "none";
     prevBtn.style.display = "none";
   }
+  if(indexNum === 1){
+    dots[2].style.display = "flex";
+  }
 };
+
+
+
 
 prevBtn.addEventListener("click", () => {
   indexNum--;
 
   showProjects();
   checkBtnsStatus();
-
+ 
   window.scrollTo({
     top: 0,
     behavior: "smooth",
@@ -61,7 +68,7 @@ prevBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   indexNum++;
-
+  dots[2].style.display = "none";
   showProjects();
   checkBtnsStatus();
 

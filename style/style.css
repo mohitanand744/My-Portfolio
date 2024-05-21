@@ -85,6 +85,11 @@ body {
   }
 }
 
+.activePage{
+  box-shadow: 0 0 30px 10px #5202e6be;
+ 
+}
+
 .activeName,
 .a {
   background: linear-gradient(rgb(255, 0, 102), #3cf);
@@ -1380,6 +1385,7 @@ main {
     }
   }
 }
+
 
 /***** Footer Section *****/
 footer {
