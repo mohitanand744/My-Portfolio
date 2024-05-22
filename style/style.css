@@ -388,13 +388,49 @@ header {
   }
 }
 
+.toglebtn {
+  padding: 1.2rem 4rem;
+  outline: none;
+  border: none;
+  border-radius: 33px;
+  font-size: 2rem;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  color: #fff;
+  font-weight: bold;
+  background: #0000006c;
+  box-shadow: rgb(122, 122, 122) 0px 0px 20px 0px inset,
+    rgba(0, 0, 0, 0.397) 0px 50px 100px -20px inset,
+    rgba(61, 61, 61, 0.801) 0px -2px 6px 0px inset;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 0.88;
+  }
+}
+
 .showingCards {
   box-shadow: rgba(18, 1, 255, 0.521) 0px 20px 30px -20px inset,
     rgba(146, 0, 243, 0.527) 0px 20px 60px -30px inset,
     rgb(174, 0, 255) 0px -2px 6px 0px inset;
   background: rgba(0, 0, 0, 0.842);
 }
-
+.ac {
+  box-shadow: rgba(18, 1, 255, 0.521) 0px 20px 30px -20px inset,
+    rgba(146, 0, 243, 0.527) 0px 20px 60px -30px inset,
+    rgb(174, 0, 255) 0px -2px 6px 0px inset;
+  background: rgba(0, 0, 0, 0.842);
+}
 /***** End btn *****/
 
 main {
@@ -986,6 +1022,13 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .togelBtns{
+        margin: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
 
       & h2 {
         font-size: 5.5rem;

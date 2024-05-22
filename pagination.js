@@ -1,5 +1,6 @@
 // ! pagination code
-
+let projectsCartPagination = () => {
+  
 let projects = document.querySelector(
   "#projects .Latest-work .cards-container"
 ).children;
@@ -26,7 +27,7 @@ let showProjects = () => {
     }
 
     pageNum.innerHTML = `${indexNum}`;
-    dots[2].innerText = pages;
+    console.log(indexNum);
   }
 };
 
@@ -46,12 +47,7 @@ let checkBtnsStatus = () => {
     dots[0].style.display = "none";
     prevBtn.style.display = "none";
   }
-  if(indexNum === 1){
-    dots[2].style.display = "flex";
-  }
 };
-
-
 
 
 prevBtn.addEventListener("click", () => {
@@ -59,7 +55,7 @@ prevBtn.addEventListener("click", () => {
 
   showProjects();
   checkBtnsStatus();
- 
+
   window.scrollTo({
     top: 0,
     behavior: "smooth",
@@ -68,7 +64,6 @@ prevBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   indexNum++;
-  dots[2].style.display = "none";
   showProjects();
   checkBtnsStatus();
 
@@ -80,3 +75,7 @@ nextBtn.addEventListener("click", () => {
 
 showProjects();
 checkBtnsStatus();
+
+}
+
+projectsCartPagination()
