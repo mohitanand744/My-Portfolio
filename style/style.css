@@ -85,9 +85,8 @@ body {
   }
 }
 
-.activePage{
+.activePage {
   box-shadow: 0 0 30px 10px #5202e6be;
- 
 }
 
 .activeName,
@@ -386,6 +385,10 @@ header {
   &:active {
     scale: 0.88;
   }
+}
+
+.totalprojects {
+  margin: 2rem;
 }
 
 .toglebtn {
@@ -1023,7 +1026,7 @@ main {
       flex-direction: column;
       align-items: center;
 
-      .togelBtns{
+      .togelBtns {
         margin: 1.5rem;
         display: flex;
         align-items: center;
@@ -1384,7 +1387,7 @@ main {
         }
       }
 
-      & span{
+      & span {
         color: #fff;
         width: 35px;
         aspect-ratio: 1;
@@ -1428,7 +1431,6 @@ main {
     }
   }
 }
-
 
 /***** Footer Section *****/
 footer {

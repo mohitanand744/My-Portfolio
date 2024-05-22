@@ -108,6 +108,10 @@ document.addEventListener("mouseout", () => {
 
 //! filter Card Function
 
+document.querySelector(
+  ".totalprojects"
+).innerText = `Total Projects : ${filterCards.length} 😎`;
+
 let filterProjectsCart = () => {
   let filtercardss = (e) => {
     document.querySelector(".showingCards").classList.remove("showingCards");
