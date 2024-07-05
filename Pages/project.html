@@ -97,7 +97,7 @@
             HTML / CSS / JavaScript
           </button>
           <button class="filterbtn" data-name="api">JavaScript / API</button>
-          <button class="filterbtn" data-name="reactapi">React / API</button>
+          <button class="filterbtn" data-name="react">React</button>
           <button class="filterbtn" data-name="react">
             React / Tailwind CSS
           </button>
@@ -214,24 +214,16 @@
             <h1>My Portfolio</h1>
             <div class="card-btn-container">
               <a
-                style="display: flex; align-items: center; gap: 9px"
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 9px;
+                  width: 200px;
+                "
                 class="btn"
                 href="https://github.com/mohitanand744/My-Portfolio.git"
                 target="_blank"
                 >GitHub
-                <img
-                  width="15px"
-                  src="../Images/45degright-arrow-64.png"
-                  style="rotate: 315deg; padding-bottom: 13px"
-                  alt="github"
-              /></a>
-
-              <a
-                style="display: flex; align-items: center; gap: 9px"
-                class="btn"
-                href="https://mohit-anand.netlify.app/"
-                target="_blank"
-                >Live
                 <img
                   width="15px"
                   src="../Images/45degright-arrow-64.png"
@@ -339,39 +331,7 @@
               /></a>
             </div>
           </div>
-          <div class="filtercard" data-name="api">
-            <div class="img-container">
-              <img src="../images/Find Word Meaning.png" alt="Game Image" />
-            </div>
-            <h1>Find Word Meaning</h1>
-            <div class="card-btn-container">
-              <a
-                style="display: flex; align-items: center; gap: 9px"
-                class="btn"
-                href="https://github.com/mohitanand744/Find-Word-Meaning.git"
-                target="_blank"
-                >GitHub
-                <img
-                  width="15px"
-                  src="../Images/45degright-arrow-64.png"
-                  style="rotate: 315deg; padding-bottom: 13px"
-                  alt="github"
-              /></a>
 
-              <a
-                style="display: flex; align-items: center; gap: 9px"
-                class="btn"
-                href="https://find-word-meaning.netlify.app/"
-                target="_blank"
-                >Live
-                <img
-                  width="15px"
-                  src="../Images/45degright-arrow-64.png"
-                  style="rotate: 315deg; padding-bottom: 13px"
-                  alt="github"
-              /></a>
-            </div>
-          </div>
           <div class="filtercard" data-name="api">
             <div class="img-container">
               <img src="../images/CurrencyConverter.jpg" alt="Game Image" />
@@ -472,7 +432,11 @@
           />
         </div>
         <div class="col">
-          <img width="100px" src="../Images/logo.png" alt="logo" />
+          <img
+            width="95px"
+            src="https://img.icons8.com/nolan/64/code--v1.png"
+            alt="source-code"
+          />
           <p>
             Subscribe DevMindScape Youtube Channel to Watch more videos on
             Website Development and press the bell icon to get immediate
@@ -496,14 +460,13 @@
           </div>
         </div>
         <div class="col center">
-          <h3>Links</h3>
+          <h3 class="h3">Links</h3>
           <div class="links">
-            <a href="../index.html" class="a">Home</a>
-            <a href="../index.html#about">About</a>
-            <a href="../index.html#skills">Skills</a>
-            <a href="../index.html#latestWork">Projects</a>
-            <a href="../index.html#Experience">Experience</a>
-            <a href="../index.html#contact">Contact</a>
+            <a href="#home" class="activeName">Home</a>
+            <a href="#about">About</a>
+            <a href="./Pages/project.html">Projects</a>
+            <a href="#Experience">Experience</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
         <div class="col">
@@ -534,7 +497,6 @@
         </div>
       </div>
     </footer>
-
     <a href="#latestWork" class="gototop">
       <img width="45" height="45" src="../Images/yr.png" />
     </a>
