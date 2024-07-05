@@ -121,6 +121,7 @@
   footer {
     & .row {
       grid-template-columns: repeat(1, 1fr);
+      justify-items: left;
     }
   }
 
@@ -318,7 +319,8 @@
         }
       }
     }
-  }}
+  }
+}
 
 @media screen and (width < 438px) {
   html {
