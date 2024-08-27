@@ -464,8 +464,38 @@ main {
         justify-content: center;
         gap: 0.4rem;
 
-        & img {
-          width: 50px;
+        & a {
+          position: relative;
+
+          &:nth-child(1) {
+            &::after {
+              content: "4k";
+              color: #fff;
+              font-size: 1.5rem;
+              background: red;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              height: 2.6rem;
+              width: 2.6rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: bold;
+              border: 1px solid #fff;
+              position: absolute;
+              top: -1.5rem;
+              left: -1rem;
+              animation: blink 0.7s linear infinite alternate;
+              -webkit-animation: blink 0.7s linear infinite alternate;
+            }
+          }
+
+          & img {
+            width: 50px;
+          }
         }
       }
 
@@ -925,6 +955,12 @@ main {
       & img {
         left: -20px;
       }
+
+      &:nth-child(3) {
+        & img {
+          left: -50px;
+        }
+      }
     }
 
     &::after {
@@ -933,7 +969,7 @@ main {
       width: 6px;
       height: 60%;
       background: linear-gradient(#eb1d6fb4, #10baf3ab);
-      top: 45%;
+      top: 39%;
       left: 3%;
       margin-left: -3px;
       z-index: -1;
@@ -1552,5 +1588,14 @@ footer {
 
   100% {
     scale: 1.05;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background: rgb(255, 0, 0);
+  }
+  100% {
+    background: rgb(122, 0, 0);
   }
 }
