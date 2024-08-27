@@ -216,6 +216,19 @@
       }
     }
   }
+
+  main {
+    & .Experience-timeLine {
+      & .right-container {
+        &:nth-child(3) {
+          & img {
+            width: 60px !important;
+            left: -20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (width < 500px) {
@@ -435,7 +448,6 @@
   main .Experience-timeLine {
     &::after {
       left: 12px;
-      top: 33%;
     }
   }
 
