@@ -486,8 +486,8 @@ main {
               font-weight: bold;
               border: 1px solid #fff;
               position: absolute;
-              top: -1.5rem;
-              left: -1rem;
+              top: -1rem;
+              left: -0.7rem;
               animation: blink 0.7s linear infinite alternate;
               -webkit-animation: blink 0.7s linear infinite alternate;
             }
@@ -900,7 +900,7 @@ main {
 
         & .timeline-txt-box {
           padding: 2rem 3rem;
-          margin-left: 5rem;
+          margin-left: 3rem;
           background: #0000006c;
           position: relative;
           border-radius: 1.5rem;
@@ -939,14 +939,35 @@ main {
             border-right: 15px solid #d6d6d6a8;
             left: -15px;
           }
-        }
 
-        & img {
-          position: absolute;
-          width: 6rem;
-          right: -30px;
-          top: 26px;
-          z-index: 1;
+          .titles {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            & img {
+              width: 5rem;
+              height: 5rem;
+              object-fit: cover;
+            }
+          }
+
+          &::after {
+            content: "";
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background: linear-gradient(rgb(255, 0, 102), #3cf);
+            position: absolute;
+            left: -4.5rem;
+            top: 3.6rem;
+            box-shadow: rgba(0, 184, 240, 0.74) 0px 0px 100px -20px,
+              rgba(0, 35, 230, 0.781) 0px 0px 80px -30px,
+              rgba(132, 0, 255, 0.795) 0px -1px 6px 2px;
+          }
         }
       }
 
@@ -971,7 +992,7 @@ main {
         width: 6px;
         height: 60%;
         background: linear-gradient(#eb1d6fb4, #10baf3ab);
-        top: 40%;
+        top: 35%;
         left: 3%;
         margin-left: -3px;
         z-index: -1;

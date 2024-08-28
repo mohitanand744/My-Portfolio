@@ -233,7 +233,7 @@
 
 @media screen and (width < 500px) {
   html {
-    font-size: 45.5%;
+    font-size: 42.5%;
   }
   footer {
     & .row {
