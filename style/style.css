@@ -5,11 +5,6 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   scroll-behavior: smooth;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
 }
 
 html {
@@ -932,12 +927,12 @@ main {
             height: 0;
             width: 0;
             position: absolute;
-            top: 3rem;
+            top: 3.7rem;
             z-index: 1;
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            border-right: 15px solid #d6d6d6a8;
-            left: -15px;
+            border-top: 1rem solid transparent;
+            border-bottom: 1rem solid transparent;
+            border-right: 1rem solid #d6d6d6a8;
+            left: -1rem;
           }
 
           .titles {
@@ -1333,6 +1328,16 @@ main {
 
 main {
   & .Latest-work {
+    .filtercard {
+      img {
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+      }
+    }
+
     & .pagination-container {
       display: flex;
       align-items: center;
@@ -1342,11 +1347,11 @@ main {
       padding: 4rem;
 
       & img {
-        transition: 0.5s;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -ms-transition: 0.5s;
-        -o-transition: 0.5s;
+        transition: 0.5s !important;
+        -webkit-transition: 0.5s !important;
+        -moz-transition: 0.5s !important;
+        -ms-transition: 0.5s !important;
+        -o-transition: 0.5s !important;
         &:hover {
           scale: 1.2;
         }
